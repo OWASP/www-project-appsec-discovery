@@ -67,18 +67,18 @@ appsec-discovery --source tests/swagger_samples
   object_name: Route /user/login (GET)
   object_type: route
   parser: swagger
-  severity: high
+> severity: high  <<<<<<<<<<<<<<<<<<<<<<<< !!!
   tags:
-  - auth
+> - auth  <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< !!!
   file: swagger.yaml
   line: 1
   properties:
     path:
       prop_name: path
       prop_value: /user/login
-      severity: medium
+>>>>  severity: medium  <<<<<<<<<<<<<<<<<< !!!
       tags:
-      - auth
+>>>>  - auth  <<<<<<<<<<<<<<<<<<<<<<<<<<<< !!!
     method:
       prop_name: method
       prop_value: GET
@@ -88,17 +88,17 @@ appsec-discovery --source tests/swagger_samples
       field_type: string
       file: swagger.yaml
       line: 1
-      severity: medium
+>>>>  severity: medium  <<<<<<<<<<<<<<<<<< !!!
       tags:
-      - auth
+>>>>  - auth  <<<<<<<<<<<<<<<<<<<<<<<<<<<< !!!
     query.param.password:
       field_name: query.param.password
       field_type: string
       file: swagger.yaml
       line: 1
-      severity: high
+>>>>  severity: high    <<<<<<<<<<<<<<<<<< !!!
       tags:
-      - auth
+>>>>  - auth  <<<<<<<<<<<<<<<<<<<<<<<<<<<< !!!
     output:
       field_name: output
       field_type: string
@@ -109,9 +109,9 @@ appsec-discovery --source tests/swagger_samples
   object_name: Query Queries.promoterInfo
   object_type: query
   parser: graphql
-  severity: high
+> severity: high  <<<<<<<<<<<<<<<<<<<<<<<< !!!
   tags:
-  - pii
+> - pii  <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< !!!
   file: query.graphql
   line: 143
   properties: {}
@@ -126,9 +126,9 @@ appsec-discovery --source tests/swagger_samples
       field_type: String
       file: query.graphql
       line: 342
-      severity: high
+>>>>  severity: high  <<<<<<<<<<<<<<<<<< !!!
       tags:
-      - pii
+>>>>  - pii  <<<<<<<<<<<<<<<<<<<<<<<<<<< !!!
     output.PromoterInfoPayload.lastName:
       field_name: output.PromoterInfoPayload.lastName
       field_type: String
@@ -136,7 +136,7 @@ appsec-discovery --source tests/swagger_samples
       line: 365
       severity: high
       tags:
-      - pii
+>>>>  - pii  <<<<<<<<<<<<<<<<<<<<<<<<<<< !!!
 ```
 
 ## Use local LLM model for scoring fields
@@ -161,9 +161,9 @@ appsec-discovery --source tests/swagger_samples --config tests/config_samples/ai
   object_name: Swagger route /user/login (GET)
   object_type: route
   parser: swagger
-  severity: medium
+> severity: medium  <<<<<<<<<<<<<<<< !!!
   tags:
-  - llm
+> - llm  <<<<<<<<<<<<<<<<<<<<<<<<<<< !!!
   file: /swagger.yaml
   line: 83
   properties:
@@ -180,9 +180,9 @@ appsec-discovery --source tests/swagger_samples --config tests/config_samples/ai
       field_type: string
       file: /swagger.yaml
       line: 83
-      severity: medium
+>>>>  severity: medium  <<<<<<<<<<<<<< !!!
       tags:
-      - llm
+>>>>  - llm  <<<<<<<<<<<<<<<<<<<<<<<<< !!!
       ...
 
 ```
