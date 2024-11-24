@@ -1,12 +1,12 @@
 ---
-title: Parse examples
+title: Examples
 layout:  null
 tab: true
 order: 1
-tags: parsers
+tags: example-tag
 ---
 
-# Parse examples
+# Examples
 
 Some examples of code input and tool output for common contract types like Swagger, Protobuf and Graphql.
 
