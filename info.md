@@ -16,4 +16,4 @@
 * [PyPi](https://pypi.org/project/appsec-discovery)
 
 ### Code Repository
-* [Appsec Discovery at Github](https://github.com/dmarushkin/appsec-discovery)
+* [OWASP Appsec Discovery at Github](https://github.com/dmarushkin/OWASP-Appsec-Discovery)
