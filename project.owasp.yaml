@@ -1,0 +1,26 @@
+audience:
+  - builder
+  - defender
+leaders:
+  - name: Dmitrii Mariushkin
+    email: dmitrii.mariushkin@owasp.org
+    github: dmarushkin
+level: 2
+license:
+  - MIT
+name: OWASP Appsec Discovery
+pitch: A very brief, one-line description of your project
+repositories:
+  - name: www-project-appsec-discovery
+    url: https://github.com/OWASP/www-project-appsec-discovery
+    description: OWASP Foundation web repository
+  - name: OWASP-Appsec-Discovery
+    url: https://github.com/dmarushkin/OWASP-Appsec-Discovery
+    description: OWASP Appsec Discovery tool and service for searching, parsing, and scoring severity using rules or AI for Swagger, Protobuf, GraphQL,
+      DTOs, and other structured contract objects in code
+tags:
+  - example-tag
+  - custom-tag-1
+  - custom-tag-2
+type: code
+website: https://owasp.org/www-project-appsec-discovery
